@@ -47,7 +47,6 @@ body {
   background-color: hsl(213, 19%, 18%);
   padding: 10px;
   border-radius: 100%;
-  transition: 0.5s;
 }
 
 .star-icon {
@@ -79,18 +78,29 @@ body {
   margin-bottom: 32px;
 }
 
-.rating-numbers .dark-circle:hover {
+.orange-hover {
+  transition: 0.5s;
+}
+
+.orange-hover:hover {
   cursor: pointer;
   background-color: hsl(25, 97%, 53%);
 }
 
-.rating-numbers .dark-circle:hover .rating-number {
+.orange-hover:hover .rating-number,
+.grey-circle .rating-number {
   color: hsl(0, 0%, 100%);
+}
+
+.grey-circle {
+  cursor: pointer;
+  background-color: hsl(217, 12%, 63%);
 }
 
 .rating-number {
   text-align: center;
   transition: 0.5s;
+  pointer-events: none;
   margin: 1px 7.5px;
 }
 
