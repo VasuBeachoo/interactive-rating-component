@@ -54,5 +54,3 @@ function submitComponent() {
 submitBtn.addEventListener("click", (e) => {
   if (selectedNum !== "") submitComponent();
 });
-
-//submitComponent(); // TESTINGGGGGGGGGGG
